@@ -1,0 +1,194 @@
+[gd_scene load_steps=9 format=3 uid="uid://bgjyjn6ivfjtp"]
+
+[ext_resource type="Texture2D" uid="uid://25s0u0mc6tck" path="res://Sprites/Vida.png" id="1_un8lp"]
+[ext_resource type="Texture2D" uid="uid://dp8sk2q24qk2r" path="res://Sprites/Bala.png" id="2_qhred"]
+[ext_resource type="Texture2D" uid="uid://by4mgqu66hrnm" path="res://Sprites/Jugador1.png" id="3_niqak"]
+[ext_resource type="Texture2D" uid="uid://dfppwsy0j5ssi" path="res://Sprites/Pistola1.png" id="4_t2c3m"]
+[ext_resource type="Texture2D" uid="uid://c0qgnrdfx650p" path="res://Sprites/Recargar.png" id="5_bjcms"]
+[ext_resource type="Texture2D" uid="uid://bg84ruj1cjbh6" path="res://Sprites/47877.png" id="6_wh55b"]
+[ext_resource type="Texture2D" uid="uid://chf45ey6s60aj" path="res://Sprites/NoVida.png" id="7_18p71"]
+[ext_resource type="Texture2D" uid="uid://casrr52gp662d" path="res://Sprites/Calavera (2).png" id="8_keqss"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -141.0
+offset_top = -116.0
+offset_right = 126.0
+offset_bottom = -35.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Button" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 2
+size_flags_horizontal = 2
+action_mode = 0
+text = "                 "
+
+[node name="Recargar" type="Sprite2D" parent="HBoxContainer/Button"]
+position = Vector2(40, 42.0001)
+scale = Vector2(0.134766, 0.134766)
+texture = ExtResource("5_bjcms")
+
+[node name="Button2" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 2
+size_flags_horizontal = 6
+action_mode = 0
+text = "                 "
+
+[node name="47877" type="Sprite2D" parent="HBoxContainer/Button2"]
+position = Vector2(40.0001, 41)
+scale = Vector2(0.137695, 0.137695)
+texture = ExtResource("6_wh55b")
+
+[node name="Button3" type="Button" parent="HBoxContainer"]
+modulate = Color(0.231373, 1, 0.294118, 1)
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 2
+size_flags_horizontal = 10
+action_mode = 0
+text = "                 "
+
+[node name="Pistola1" type="Sprite2D" parent="HBoxContainer/Button3"]
+position = Vector2(40.9999, 40)
+scale = Vector2(0.123272, 0.123272)
+texture = ExtResource("4_t2c3m")
+
+[node name="Vida" type="Sprite2D" parent="."]
+position = Vector2(95.875, 576.125)
+scale = Vector2(0.156738, 0.156739)
+texture = ExtResource("1_un8lp")
+
+[node name="Bala" type="Sprite2D" parent="."]
+position = Vector2(1048, 568)
+scale = Vector2(0.140625, 0.140625)
+texture = ExtResource("2_qhred")
+
+[node name="BoxContainer" type="BoxContainer" parent="."]
+offset_left = 574.0
+offset_top = 328.0
+offset_right = 614.0
+offset_bottom = 368.0
+
+[node name="Jugador1" type="Sprite2D" parent="BoxContainer"]
+modulate = Color(1, 0, 0.0156863, 1)
+position = Vector2(-192, 0)
+texture = ExtResource("3_niqak")
+
+[node name="Jugador2" type="Sprite2D" parent="BoxContainer"]
+position = Vector2(192, 0)
+texture = ExtResource("3_niqak")
+
+[node name="Jugador3" type="Sprite2D" parent="BoxContainer"]
+texture = ExtResource("3_niqak")
+
+[node name="NoVida" type="Sprite2D" parent="."]
+position = Vector2(190.375, 577.625)
+scale = Vector2(0.162598, 0.162598)
+texture = ExtResource("7_18p71")
+
+[node name="Nombre_1" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 334.0
+offset_top = 127.0
+offset_right = 433.0
+offset_bottom = 163.0
+text = "QUESO_97"
+
+[node name="Nombre_2" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 516.0
+offset_top = 127.0
+offset_right = 636.0
+offset_bottom = 163.0
+text = "TEQUILA_900"
+
+[node name="Nombre_3" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 718.0
+offset_top = 127.0
+offset_right = 831.0
+offset_bottom = 163.0
+text = "PAPAS_3000"
+
+[node name="Accion_1" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 292.0
+offset_top = 127.0
+offset_right = 329.0
+offset_bottom = 163.0
+
+[node name="Recargar2" type="Sprite2D" parent="Accion_1"]
+position = Vector2(18, 18)
+scale = Vector2(0.069336, 0.069336)
+texture = ExtResource("5_bjcms")
+
+[node name="Accion_2" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 473.0
+offset_top = 127.0
+offset_right = 510.0
+offset_bottom = 163.0
+
+[node name="Calavera(2)" type="Sprite2D" parent="Accion_2"]
+position = Vector2(19, 17)
+scale = Vector2(0.377551, 0.377551)
+texture = ExtResource("8_keqss")
+
+[node name="Accion_3" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 675.0
+offset_top = 127.0
+offset_right = 712.0
+offset_bottom = 163.0
+
+[node name="Pistola2" type="Sprite2D" parent="Accion_3"]
+position = Vector2(19, 17)
+scale = Vector2(0.0529955, 0.0529955)
+texture = ExtResource("4_t2c3m")
+
+[node name="Historial de acciones" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 720.0
+offset_top = 496.0
+offset_right = 984.0
+offset_bottom = 644.0
+text = "R5
+Disparaste a QUESO_97
+PAPAS_3000 te disparó
+R4
+Usaste Escudo"
+
+[node name="Rondas" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 450.0
+offset_top = 16.0
+offset_right = 714.0
+offset_bottom = 90.0
+theme_override_font_sizes/font_size = 43
+text = "RONDA 5"
+
+[node name="Accion_5" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 1066.0
+offset_top = 576.0
+offset_right = 1108.0
+offset_bottom = 616.0
+theme_override_font_sizes/font_size = 20
+text = "x1"
