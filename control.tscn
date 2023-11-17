@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://bgjyjn6ivfjtp"]
+[gd_scene load_steps=10 format=3 uid="uid://bgjyjn6ivfjtp"]
 
 [ext_resource type="Texture2D" uid="uid://25s0u0mc6tck" path="res://Sprites/Vida.png" id="1_un8lp"]
 [ext_resource type="Texture2D" uid="uid://dp8sk2q24qk2r" path="res://Sprites/Bala.png" id="2_qhred"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://bg84ruj1cjbh6" path="res://Sprites/47877.png" id="6_wh55b"]
 [ext_resource type="Texture2D" uid="uid://chf45ey6s60aj" path="res://Sprites/NoVida.png" id="7_18p71"]
 [ext_resource type="Texture2D" uid="uid://casrr52gp662d" path="res://Sprites/Calavera (2).png" id="8_keqss"]
+[ext_resource type="Script" path="res://NetworController.gd" id="9_jib40"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -81,6 +82,7 @@ scale = Vector2(0.140625, 0.140625)
 texture = ExtResource("2_qhred")
 
 [node name="BoxContainer" type="BoxContainer" parent="."]
+layout_mode = 0
 offset_left = 574.0
 offset_top = 328.0
 offset_right = 614.0
@@ -192,3 +194,9 @@ offset_right = 1108.0
 offset_bottom = 616.0
 theme_override_font_sizes/font_size = 20
 text = "x1"
+
+[node name="NetworController" type="Node" parent="."]
+script = ExtResource("9_jib40")
+user = "tdytfuktcuj"
+
+[node name="HTTPRequest" type="HTTPRequest" parent="NetworController"]
