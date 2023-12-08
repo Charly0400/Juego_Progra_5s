@@ -197,6 +197,6 @@ text = "x1"
 
 [node name="NetworController" type="Node" parent="."]
 script = ExtResource("9_jib40")
-user = "tdytfuktcuj"
+user = "Charly"
 
 [node name="HTTPRequest" type="HTTPRequest" parent="NetworController"]

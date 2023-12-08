@@ -9,9 +9,9 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _onComplete (result, response_code, headres, body):
+func _onComplete (result, response_code, headers, body):
 	print(body.get_string_from_utf8())
 
 func _GetToID(String):
 	pass
-	
+
