@@ -186,7 +186,7 @@ offset_bottom = 90.0
 theme_override_font_sizes/font_size = 43
 text = "RONDA 5"
 
-[node name="Accion_5" type="TextEdit" parent="."]
+[node name="Balas" type="TextEdit" parent="."]
 layout_mode = 0
 offset_left = 1066.0
 offset_top = 576.0
