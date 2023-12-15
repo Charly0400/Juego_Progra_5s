@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://bg84ruj1cjbh6" path="res://Sprites/47877.png" id="6_wh55b"]
 [ext_resource type="Texture2D" uid="uid://chf45ey6s60aj" path="res://Sprites/NoVida.png" id="7_18p71"]
 [ext_resource type="Texture2D" uid="uid://casrr52gp662d" path="res://Sprites/Calavera (2).png" id="8_keqss"]
-[ext_resource type="Script" path="res://NetworController.gd" id="9_jib40"]
+[ext_resource type="Script" path="res://NetworkController.gd" id="9_5bkxc"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -186,7 +186,7 @@ offset_bottom = 90.0
 theme_override_font_sizes/font_size = 43
 text = "RONDA 5"
 
-[node name="Balas" type="TextEdit" parent="."]
+[node name="Accion_5" type="TextEdit" parent="."]
 layout_mode = 0
 offset_left = 1066.0
 offset_top = 576.0
@@ -196,7 +196,7 @@ theme_override_font_sizes/font_size = 20
 text = "x1"
 
 [node name="NetworController" type="Node" parent="."]
-script = ExtResource("9_jib40")
+script = ExtResource("9_5bkxc")
 user = "Charly"
 
 [node name="HTTPRequest" type="HTTPRequest" parent="NetworController"]
